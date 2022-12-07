@@ -1,4 +1,4 @@
-# CALCULATOR-MATH
+### CALCULATOR-MATH
 
 ---
 
@@ -6,8 +6,8 @@
 
 ---
 
-Ce projet est un projet réalisé encours de formation avec l'organisme STUDI
-Cette application permet de calculer à partir d'un cercle, d'un rectangle, d'un triangle, d'un parallélépipède et d'une sphère:
+Ce projet a été réalisé encours de formation avec l'organisme STUDI.
+Cette application permet de calculer à partir d'un cercle, d'un rectangle, d'un triangle, d'un parallélépipède et d'une sphère :
 
 - une aire
 - une surface
