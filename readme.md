@@ -2,7 +2,7 @@
 
 ---
 
-![interface app](https://github.com/ABBA-74/calculator-math/blob/main/interface-1.png?raw=true)
+![interface app](https://github.com/ABBA-74/calculator-math/blob/main/assets/img/interface-1.png?raw=true)
 
 ---
 
@@ -15,4 +15,4 @@ Cette application permet de calculer à partir d'un cercle, d'un rectangle, d'un
 
 ---
 
-![interface app](https://github.com/ABBA-74/calculator-math/blob/main/interface-1.png?raw=true)
+![interface app](https://github.com/ABBA-74/calculator-math/blob/main/assets/img/interface-2.png?raw=true)
