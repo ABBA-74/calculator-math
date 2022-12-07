@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Calculator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Volume<br />Area and perimeter calculation</h1>
+      <p class="subtitle">Need some help because you are a noob in math !!!</p>
+      <div class="main">
+        <label for="shape" class="label-select"
+          >No worry 😉 Please choose your shape :
+        </label>
+        <select class="shape-select" autocomplete="off">
+          <option class="item-select" value="" selected="selected">
+            -- Your shape --
+          </option>
+          <option class="item-select" value="rectangle">Rectangle</option>
+          <option class="item-select" value="triangle">Triangle</option>
+          <option class="item-select" value="circle">Circle</option>
+          <option class="item-select" value="parallelepiped">
+            Parallelepiped
+          </option>
+          <option class="item-select" value="sphere">Sphere</option>
+        </select>
+
+        <div class="wrapper">
+          <img
+            src="./assets/img/fond-tableau-math.jpg"
+            class="wrapper-left-cover"
+            alt="illustration tableau formules mathématiques"
+            srcset=""
+          />
+          <div class="wrapper-left">
+            <!-- <div class="option"> -->
+
+            <img
+              src="./assets/img/chouette.png"
+              alt="illustration chouette"
+              class="illustration-teacher"
+              srcset=""
+            />
+            <div class="wrapper-left-content opac-0">
+              <div class="radio-group">
+                <p>Which value do you need ?</p>
+                <span class="radio-group-circumference">
+                  <input type="radio" id="circumference" name="opt" />
+                  <label for="circumference">Circumference</label>
+                </span>
+                <span class="radio-group-perimeter">
+                  <input type="radio" id="perimeter" name="opt" />
+                  <label for="perimeter">Perimeter</label>
+                </span>
+                <span class="radio-group-area">
+                  <input type="radio" id="area" name="opt" />
+                  <label for="area">Area</label>
+                </span>
+                <span class="radio-group-volume">
+                  <input type="radio" id="volume" name="opt" />
+                  <label for="volume">Volume</label>
+                </span>
+              </div>
+
+              <div class="values">
+                <div class="input-group">
+                  <label for="val-1"></label>
+                  <input
+                    id="val-1"
+                    name="val-1"
+                    type="number"
+                    min="0"
+                    max="1000000000"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="val-2"></label>
+                  <input
+                    id="val-2"
+                    name="val-2"
+                    type="number"
+                    min="0"
+                    max="1000000000"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="val-3"></label>
+                  <input
+                    id="val-3"
+                    name="val-3"
+                    type="number"
+                    min="0"
+                    max="1000000000"
+                  />
+                </div>
+              </div>
+              <div class="wrapper-formulas">
+                <p>Formula :</p>
+                <div class="formulas formulas-rectangle d-none">
+                  <p class="formulas-rectangle-perimeter">
+                    $$Perimeter = 2*(h+w)$$
+                  </p>
+                  <p class="formulas-rectangle-area">$$Area = h*w$$</p>
+                </div>
+                <div class="formulas formulas-triangle d-none">
+                  <p class="formulas-triangle-perimeter">
+                    $$Perimeter = a+b+c$$
+                  </p>
+                  <p class="formulas-triangle-area">
+                    $$s = {a+b+c\over2}$$ $$Area = \sqrt{s(s-a)(s-b)(s-c)}$$
+                  </p>
+                </div>
+                <div class="formulas formulas-circle d-none">
+                  <p class="formulas-circle-circumference">
+                    $$Circumference = {\pi*r^2}$$
+                  </p>
+                  <p class="formulas-circle-area">$$Area = {\pi*2*r}$$</p>
+                </div>
+                <div class="formulas formulas-parallelepiped d-none">
+                  <p class="formulas-parallelepiped-area">
+                    $$Area = {2hw + 2hd + 2wd}$$
+                  </p>
+                  <p class="formulas-parallelepiped-volume">
+                    $$Volume = {w*d*h}$$
+                  </p>
+                </div>
+                <div class="formulas formulas-sphere d-none">
+                  <p class="formulas-sphere-area">$$Area = {4*\pi*r^2}$$</p>
+                  <p class="formulas-sphere-volume">
+                    $$Volume = {4\pi*r^3\over3}$$
+                  </p>
+                </div>
+                <div class="result">
+                  <button class="btn btn-result">Result</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-right">
+            <img
+              src="./assets/img/shapes-bg.png"
+              alt="illustration formes carré triangle cercle rectangle"
+              class="wrapper-right-bg"
+            />
+            <div class="illustration-shape">
+              <!-- <img
+                src="./assets/img/fond-tableau-math.jpg"
+                alt="bg"
+                class="shape bg"
+              /> -->
+              <img
+                src="./assets/img/circle.png"
+                alt="cercle"
+                class="shape circle opac-0"
+              />
+              <img
+                src="./assets/img/parallelepiped.png"
+                alt="parallélépipède"
+                class="shape parallelepiped opac-0"
+              />
+              <img
+                src="./assets/img/rectangle.png"
+                alt="rectangle"
+                class="shape rectangle opac-0"
+              />
+              <img
+                src="./assets/img/sphere.png"
+                alt="sphère"
+                class="shape sphere opac-0"
+              />
+              <img
+                src="./assets/img/triangle.png"
+                alt="triangle"
+                class="shape triangle opac-0"
+              />
+            </div>
+            <div class="wrapper-result-value inactive">
+              <p class="result-value"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
